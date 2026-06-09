@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildFlow — Project Management, Reimagined</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── HEADER ─────────────────────────────────────────────────────── -->
+<header>
+  <nav class="container" aria-label="Main navigation">
+    <a href="#" class="logo">Build<span>Flow</span></a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <a href="#pricing" class="nav-cta">Get started</a>
+
+    <button class="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="container">
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
+      <a href="#features" onclick="closeMobile()">Features</a>
+      <a href="#how"      onclick="closeMobile()">How it works</a>
+      <a href="#pricing"  onclick="closeMobile()">Pricing</a>
+      <a href="#faq"      onclick="closeMobile()">FAQ</a>
+      <a href="#pricing" class="nav-cta" onclick="closeMobile()">Get started free</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── MAIN ────────────────────────────────────────────────────────── -->
+<main>
+
+  <!-- HERO -->
+  <section class="hero container" aria-labelledby="hero-heading">
+    <span class="hero-eyebrow">Trusted by 12,000+ teams</span>
+    <h1 id="hero-heading">
+      Ship projects <em>on time</em>,<br />every time.
+    </h1>
+    <p class="hero-sub">
+      BuildFlow brings your tasks, team, and deadlines into one calm, focused workspace. No noise. Just flow.
+    </p>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn-primary">Start for free</a>
+      <a href="#how"     class="btn-secondary">See how it works</a>
+    </div>
+    <div class="hero-trust" aria-label="Key benefits">
+      <span>No credit card needed</span>
+      <span>Free up to 5 projects</span>
+      <span>Cancel any time</span>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-bar" aria-label="Key statistics">
+    <div class="container">
+      <dl class="stats-grid">
+        <div>
+          <dt class="stat-label">Teams using BuildFlow</dt>
+          <dd class="stat-num">12k+</dd>
+        </div>
+        <div>
+          <dt class="stat-label">Tasks completed</dt>
+          <dd class="stat-num">4.2M</dd>
+        </div>
+        <div>
+          <dt class="stat-label">On-time delivery rate</dt>
+          <dd class="stat-num">94%</dd>
+        </div>
+        <div>
+          <dt class="stat-label">Avg. time saved / week</dt>
+          <dd class="stat-num">6 hrs</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features" aria-labelledby="features-heading">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">Features</span>
+        <h2 id="features-heading">Everything your team needs</h2>
+        <p>Designed around the way real teams actually work — no configuration required.</p>
+      </header>
+
+      <ul class="features-grid" role="list">
+        <li class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📋</div>
+          <h3>Smart Task Boards</h3>
+          <p>Drag-and-drop kanban boards that auto-sort by priority, assignee, or deadline — your call.</p>
+        </li>
+        <li class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⏱️</div>
+          <h3>Deadline Radar</h3>
+          <p>A live timeline that flags at-risk tasks 48 hours before they slip, so nothing sneaks up on you.</p>
+        </li>
+        <li class="feature-card">
+          <div class="feature-icon" aria-hidden="true">💬</div>
+          <h3>Contextual Comments</h3>
+          <p>Leave feedback directly on a task, file, or code block — no more "per my last email" moments.</p>
+        </li>
+        <li class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📊</div>
+          <h3>Team Analytics</h3>
+          <p>Velocity trends, blockers, and workload balance — surfaced weekly without you asking.</p>
+        </li>
+        <li class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔗</div>
+          <h3>One-click Integrations</h3>
+          <p>GitHub, Slack, Figma, and Google Workspace all sync without writing a single webhook.</p>
+        </li>
+        <li class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔒</div>
+          <h3>Granular Permissions</h3>
+          <p>Role-based access down to the task level — contractors, clients, and leads each see exactly what they need.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how" aria-labelledby="how-heading">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">Process</span>
+        <h2 id="how-heading">Up and running in minutes</h2>
+        <p>Three steps from sign-up to your first shipped milestone.</p>
+      </header>
+
+      <ol class="steps" role="list">
+        <li class="step">
+          <div class="step-num" aria-hidden="true">1</div>
+          <h3>Create your workspace</h3>
+          <p>Name your project, invite your team, and pick a workflow template — or start blank. Takes 60 seconds.</p>
+        </li>
+        <li class="step">
+          <div class="step-num" aria-hidden="true">2</div>
+          <h3>Add tasks and owners</h3>
+          <p>Break work into tasks, assign owners, set deadlines, and attach any relevant files or links.</p>
+        </li>
+        <li class="step">
+          <div class="step-num" aria-hidden="true">3</div>
+          <h3>Track, adjust, ship</h3>
+          <p>Follow live progress on the timeline, get nudged when things drift, and celebrate on-time delivery.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">Reviews</span>
+        <h2 id="testimonials-heading">Teams that made the switch</h2>
+        <p>Real feedback from people who stopped missing deadlines.</p>
+      </header>
+
+      <ul class="cards-row" role="list">
+        <li class="testimonial-card">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>"We cut our sprint planning time in half. The deadline radar alone is worth the subscription."</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar" aria-hidden="true">PK</div>
+            <div>
+              <div class="reviewer-name">Priya K.</div>
+              <div class="reviewer-title">Engineering Lead, Finvest</div>
+            </div>
+          </div>
+        </li>
+        <li class="testimonial-card">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>"Our remote team finally feels in sync. Comments on tasks killed the endless Slack threads."</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: var(--blue-dk); color: var(--ink);" aria-hidden="true">MR</div>
+            <div>
+              <div class="reviewer-name">Marcus R.</div>
+              <div class="reviewer-title">Product Manager, Orbis</div>
+            </div>
+          </div>
+        </li>
+        <li class="testimonial-card">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>"I set up our entire onboarding workflow in an afternoon. The templates are a huge head start."</blockquote>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: #C4956A;" aria-hidden="true">SL</div>
+            <div>
+              <div class="reviewer-name">Sofia L.</div>
+              <div class="reviewer-title">Ops Director, Meridian</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">Pricing</span>
+        <h2 id="pricing-heading">Simple, honest pricing</h2>
+        <p>No hidden fees. No "contact us for enterprise" traps for small teams.</p>
+      </header>
+
+      <ul class="pricing-grid" role="list">
+        <li class="plan">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price"><sup>$</sup>0<span> / mo</span></div>
+          <div class="plan-desc">For individuals and tiny teams.</div>
+          <ul class="plan-features" role="list">
+            <li>Up to 5 projects</li>
+            <li>3 team members</li>
+            <li>Kanban boards</li>
+            <li>Basic analytics</li>
+          </ul>
+          <a href="#" class="plan-cta" onclick="showToast('Free plan selected — welcome aboard!'); return false;">Get started free</a>
+        </li>
+
+        <li class="plan featured">
+          <div class="plan-badge">Most popular</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price"><sup>$</sup>18<span> / mo</span></div>
+          <div class="plan-desc">For growing teams that ship fast.</div>
+          <ul class="plan-features" role="list">
+            <li>Unlimited projects</li>
+            <li>Up to 25 members</li>
+            <li>Deadline radar</li>
+            <li>All integrations</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#" class="plan-cta" onclick="showToast('Pro plan — you will love the radar!'); return false;">Start Pro trial</a>
+        </li>
+
+        <li class="plan">
+          <div class="plan-name">Business</div>
+          <div class="plan-price"><sup>$</sup>49<span> / mo</span></div>
+          <div class="plan-desc">For organizations that need control.</div>
+          <ul class="plan-features" role="list">
+            <li>Unlimited everything</li>
+            <li>SSO &amp; SAML</li>
+            <li>Granular permissions</li>
+            <li>Advanced analytics</li>
+            <li>Dedicated success manager</li>
+          </ul>
+          <a href="#" class="plan-cta" onclick="showToast('Business plan — we will reach out shortly!'); return false;">Contact sales</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 id="faq-heading">Common questions</h2>
+      </header>
+
+      <ul class="faq-list" role="list">
+        <li>
+          <details>
+            <summary>Can I migrate from Jira or Asana?</summary>
+            <div class="faq-body">Yes — we have a one-click importer for both. Your tasks, assignees, and comments transfer over. The whole process takes under 10 minutes for most teams.</div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Is there a self-hosted option?</summary>
+            <div class="faq-body">Not yet, though it's on our roadmap. Currently BuildFlow is cloud-only with SOC 2 Type II compliance and data residency options for EU customers.</div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>What happens when my free trial ends?</summary>
+            <div class="faq-body">Your account automatically moves to the Starter (free) plan. You won't lose any data — projects over the limit are archived and restored the moment you upgrade.</div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Do you offer discounts for nonprofits or students?</summary>
+            <div class="faq-body">Yes — 50% off Pro for verified nonprofits, and free Pro for students with a valid .edu email. Reach out to billing@buildflow.app with proof of eligibility.</div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>How does the Deadline Radar actually work?</summary>
+            <div class="faq-body">Deadline Radar analyzes task dependencies, historical team velocity, and assignee workload. If it predicts a task will slip, it flags it 48 hours ahead and suggests actions — reassigning, breaking the task up, or adjusting the deadline.</div>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading">Ready to stop firefighting?</h2>
+      <p>Join 12,000+ teams who plan less and ship more with BuildFlow.</p>
+      <a href="#pricing" class="btn-white">Start free — no card needed</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ──────────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">Build<span>Flow</span></a>
+        <p>Project management that gets out of your way and lets you build.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Product links">
+        <h4>Product</h4>
+        <ul role="list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Company links">
+        <h4>Company</h4>
+        <ul role="list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press kit</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Legal links">
+        <h4>Legal</h4>
+        <ul role="list">
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Cookie settings</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 BuildFlow. All rights reserved.</span>
+      <span>No frameworks — just HTML, CSS &amp; JS.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- JS loaded at end so DOM is ready -->
+<script src="script.js"></script>
+</body>
+</html>
